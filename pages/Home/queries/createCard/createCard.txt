@@ -1,0 +1,2 @@
+INSERT INTO public.cards
+("fullname","email","address","date_of_birth","phone","license_plate") VALUES ('{{(jsf_newCard.formData || {}).fullname}}', '{{(jsf_newCard.formData || {}).email}}', '{{(jsf_newCard.formData || {}).address}}', '{{new Date(jsf_newCard.formData.date_of_birth).toISOString()}}','{{(jsf_newCard.formData || {}).phone}}','{{(jsf_newCard.formData || {}).license_plate}}');
